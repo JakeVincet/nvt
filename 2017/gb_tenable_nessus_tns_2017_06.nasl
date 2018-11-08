@@ -1,6 +1,6 @@
 ###############################################################################
 # OpenVAS Vulnerability Test
-# $Id: gb_tenable_nessus_tns_2017_06.nasl 11982 2018-10-19 08:49:21Z mmartin $
+# $Id: gb_tenable_nessus_tns_2017_06.nasl 12083 2018-10-25 09:48:10Z cfischer $
 #
 # Tenable Nessus < 6.10.2 Arbitrary File Upload Vulnerability
 #
@@ -29,12 +29,12 @@ CPE = 'cpe:/a:tenable:nessus';
 if(description)
 {
   script_oid("1.3.6.1.4.1.25623.1.0.108098");
-  script_version("$Revision: 11982 $");
+  script_version("$Revision: 12083 $");
   script_cve_id("CVE-2017-6543");
   script_bugtraq_id(96418);
   script_tag(name:"cvss_base", value:"6.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:S/C:P/I:P/A:P");
-  script_tag(name:"last_modification", value:"$Date: 2018-10-19 10:49:21 +0200 (Fri, 19 Oct 2018) $");
+  script_tag(name:"last_modification", value:"$Date: 2018-10-25 11:48:10 +0200 (Thu, 25 Oct 2018) $");
   script_tag(name:"creation_date", value:"2017-03-14 13:00:00 +0100 (Tue, 14 Mar 2017)");
   script_name("Tenable Nessus < 6.10.2 Arbitrary File Upload Vulnerability");
   script_category(ACT_GATHER_INFO);
@@ -50,10 +50,10 @@ if(description)
   script_tag(name:"summary", value:"This host is installed with Nessus and is prone to
   an arbitrary file-upload vulnerability.");
 
-  script_tag(name:"vuldetect", value:"Check the version whether it is vulnerable or not.");
+  script_tag(name:"vuldetect", value:"Checks if a vulnerable version is present on the target host.");
 
   script_tag(name:"impact", value:"A remote, authenticated attacker may leverage this issue to
-  upload arbitrary files to the affected host; this can result in arbitrary code execution within
+  upload arbitrary files to the affected host. This can result in arbitrary code execution within
   the context of the vulnerable application.");
 
   script_tag(name:"affected", value:"Tenable Nessus versions 6.8.0, 6.8.1, 6.9.0 to 6.9.3, 6.10.0, 6.10.1 running

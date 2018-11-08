@@ -1,6 +1,6 @@
 ##############################################################################
 # OpenVAS Vulnerability Test
-# $Id: gb_asustor_mult_vuln.nasl 11139 2018-08-28 08:25:53Z asteins $
+# $Id: gb_asustor_mult_vuln.nasl 12193 2018-11-02 03:47:13Z ckuersteiner $
 #
 # ASUSTOR Data Master < 3.1.6 Multiple Vulnerabilities
 #
@@ -28,11 +28,11 @@
 if (description)
 {
   script_oid("1.3.6.1.4.1.25623.1.0.112365");
-  script_version("$Revision: 11139 $");
-  script_tag(name:"last_modification", value:"$Date: 2018-08-28 10:25:53 +0200 (Tue, 28 Aug 2018) $");
+  script_version("$Revision: 12193 $");
+  script_tag(name:"last_modification", value:"$Date: 2018-11-02 04:47:13 +0100 (Fri, 02 Nov 2018) $");
   script_tag(name:"creation_date", value:"2018-08-28 10:11:00 +0200 (Tue, 28 Aug 2018)");
   script_tag(name:"cvss_base", value:"8.5");
-  script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:S/C:C/I:C/A:C");
+  script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:S/C:N/I:C/A:C");
 
   script_cve_id("CVE-2018-15694", "CVE-2018-15695", "CVE-2018-15696",
   "CVE-2018-15697", "CVE-2018-15698", "CVE-2018-15699");
@@ -54,17 +54,17 @@ if (description)
 
   script_tag(name:"insight", value:"ASUSTOR Data Master is prone to following vulnerabilities:
 
-- Authenticated File Upload (CVE-2018-15694)
+  - Authenticated File Upload (CVE-2018-15694)
 
-- Authenticated Arbitrary File Deletion (CVE-2018-15695)
+  - Authenticated Arbitrary File Deletion (CVE-2018-15695)
 
-- Authenticated Account Enumeration (CVE-2018-15696)
+  - Authenticated Account Enumeration (CVE-2018-15696)
 
-- Authenticated File Disclosure (CVE-2018-15697)
+  - Authenticated File Disclosure (CVE-2018-15697)
 
-- Authenticated File Disclosure (CVE-2018-15698)
+  - Authenticated File Disclosure (CVE-2018-15698)
 
-- MITM XSS (CVE-2018-15699)");
+  - MITM XSS (CVE-2018-15699)");
 
   script_tag(name:"vuldetect", value:"Checks if a vulnerable version is present on the target host.");
 

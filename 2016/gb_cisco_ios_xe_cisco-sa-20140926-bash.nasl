@@ -1,6 +1,6 @@
 ###############################################################################
 # OpenVAS Vulnerability Test
-# $Id: gb_cisco_ios_xe_cisco-sa-20140926-bash.nasl 11938 2018-10-17 10:08:39Z asteins $
+# $Id: gb_cisco_ios_xe_cisco-sa-20140926-bash.nasl 12149 2018-10-29 10:48:30Z asteins $
 #
 # GNU Bash Environment Variable Command Injection Vulnerability
 #
@@ -33,28 +33,20 @@ if (description)
   script_cve_id("CVE-2014-6271");
   script_tag(name:"cvss_base", value:"10.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
-  script_version("$Revision: 11938 $");
+  script_version("$Revision: 12149 $");
 
   script_name("GNU Bash Environment Variable Command Injection Vulnerability");
 
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140926-bash");
-   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAMBAlert.x?alertId=35836");
-   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35880");
-   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35845");
-   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35879");
-   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35860");
-   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35861");
-   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35816");
- script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAMBAlert.x?alertId=35836");
- script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35880");
- script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35845");
- script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35879");
- script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35860");
- script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35861");
- script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35816");
+  script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAMBAlert.x?alertId=35836");
+  script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35880");
+  script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35845");
+  script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35879");
+  script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35860");
+  script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35861");
+  script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=35816");
 
-
-  script_tag(name:"vuldetect", value:"Check the version.");
+  script_tag(name:"vuldetect", value:"Checks if a vulnerable version is present on the target host.");
 
   script_tag(name:"solution", value:"See the referenced vendor advisory for a solution.");
   script_tag(name:"summary", value:"On September 24, 2014, a vulnerability in the Bash shell was publicly announced.
@@ -77,7 +69,7 @@ if (description)
   script_tag(name:"qod_type", value:"package");
   script_tag(name:"solution_type", value:"VendorFix");
 
-  script_tag(name:"last_modification", value:"$Date: 2018-10-17 12:08:39 +0200 (Wed, 17 Oct 2018) $");
+  script_tag(name:"last_modification", value:"$Date: 2018-10-29 11:48:30 +0100 (Mon, 29 Oct 2018) $");
   script_tag(name:"creation_date", value:"2016-05-10 11:04:49 +0200 (Tue, 10 May 2016)");
   script_category(ACT_GATHER_INFO);
   script_family("CISCO");

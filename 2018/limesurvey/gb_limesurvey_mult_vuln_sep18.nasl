@@ -1,6 +1,6 @@
 ###############################################################################
 # OpenVAS Vulnerability Test
-# $Id: gb_limesurvey_mult_vuln_sep18.nasl 11277 2018-09-07 08:57:39Z jschulte $
+# $Id: gb_limesurvey_mult_vuln_sep18.nasl 12193 2018-11-02 03:47:13Z ckuersteiner $
 #
 # LimeSurvey <= 3.14.3 Multiple Vulnerabilities
 #
@@ -28,11 +28,11 @@
 if( description )
 {
   script_oid("1.3.6.1.4.1.25623.1.0.113264");
-  script_version("$Revision: 11277 $");
-  script_tag(name:"last_modification", value:"$Date: 2018-09-07 10:57:39 +0200 (Fri, 07 Sep 2018) $");
+  script_version("$Revision: 12193 $");
+  script_tag(name:"last_modification", value:"$Date: 2018-11-02 04:47:13 +0100 (Fri, 02 Nov 2018) $");
   script_tag(name:"creation_date", value:"2018-09-07 10:11:44 +0200 (Fri, 07 Sep 2018)");
-  script_tag(name:"cvss_base", value:"8.5");
-  script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:S/C:C/I:C/A:C");
+  script_tag(name:"cvss_base", value:"6.5");
+  script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:S/C:P/I:P/A:P");
 
   script_tag(name:"qod_type", value:"remote_banner");
 
@@ -68,7 +68,7 @@ if( description )
   script_xref(name:"URL", value:"https://github.com/LimeSurvey/LimeSurvey/commit/20fc85edccc80e7e7f162613542792380c44446a");
   script_xref(name:"URL", value:"https://github.com/LimeSurvey/LimeSurvey/commit/91d143230eb357260a19c8424b3005deb49a47f7");
 
-  exit( 0 );
+  exit(0);
 }
 
 CPE = "cpe:/a:limesurvey:limesurvey";

@@ -1,6 +1,6 @@
 ###############################################################################
 # OpenVAS Vulnerability Test
-# $Id: gb_ms_kb4343898.nasl 10988 2018-08-15 14:37:17Z santu $
+# $Id: gb_ms_kb4343898.nasl 12120 2018-10-26 11:13:20Z mmartin $
 #
 # Microsoft Windows Multiple Vulnerabilities (KB4343898)
 #
@@ -27,7 +27,7 @@
 if(description)
 {
   script_oid("1.3.6.1.4.1.25623.1.0.813846");
-  script_version("$Revision: 10988 $");
+  script_version("$Revision: 12120 $");
   script_cve_id("CVE-2018-3615", "CVE-2018-3620", "CVE-2018-3646", "CVE-2018-8316",
                 "CVE-2018-8339", "CVE-2018-8340", "CVE-2018-8341", "CVE-2018-8343",
                 "CVE-2018-8344", "CVE-2018-8345", "CVE-2018-8348", "CVE-2018-8349",
@@ -35,17 +35,16 @@ if(description)
                 "CVE-2018-8372", "CVE-2018-8373", "CVE-2018-8385", "CVE-2018-8389",
                 "CVE-2018-8394", "CVE-2018-8398", "CVE-2018-8403", "CVE-2018-8404",
                 "CVE-2018-8405");
-  script_tag(name:"cvss_base", value:"10.0");
-  script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
-  script_tag(name:"last_modification", value:"$Date: 2018-08-15 16:37:17 +0200 (Wed, 15 Aug 2018) $");
+  script_tag(name:"cvss_base", value:"9.3");
+  script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:C/I:C/A:C");
+  script_tag(name:"last_modification", value:"$Date: 2018-10-26 13:13:20 +0200 (Fri, 26 Oct 2018) $");
   script_tag(name:"creation_date", value:"2018-08-15 13:48:12 +0530 (Wed, 15 Aug 2018)");
   script_name("Microsoft Windows Multiple Vulnerabilities (KB4343898)");
 
   script_tag(name:"summary", value:"This host is missing a critical security
   update according to Microsoft KB4343898");
 
-  script_tag(name:"vuldetect", value:"Get the vulnerable file version and check
-  appropriate patch is applied or not.");
+  script_tag(name:"vuldetect", value:"Checks if a vulnerable version is present on the target host.");
 
   script_tag(name:"insight", value:"Multiple flaw exists due to,
 
@@ -86,9 +85,7 @@ if(description)
   to execute arbitrary code, run processes in an elevated context, obtain
   information to further compromise the user's system, trick a user into believing
   that the user was on a legitimate website, read privileged data across trust
-  boundaries and also bypass certain security restrictions
-
-  Impact Level: System");
+  boundaries and also bypass certain security restrictions.");
 
   script_tag(name:"affected", value:"Microsoft Windows 8.1 for 32-bit/x64
 
@@ -125,7 +122,7 @@ if(!sysPath ){
   exit(0);
 }
 
-fileVer = fetch_file_version(sysPath, file_name:"mshtml.dll");
+fileVer = fetch_file_version(sysPath:sysPath, file_name:"mshtml.dll");
 if(!fileVer){
   exit(0);
 }
